@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>self-vue</title>
 </head>
 <style>
+    body {
+        background-image: url('https://ftp.bmp.ovh/imgs/2020/11/7ef758f6adfa294b.jpg');
+        /* background-color: aqua; */
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
     #app {
         text-align: center;
     }
 </style>
+
 <body>
     <div id="app">
         <h2>{{title}}
-        <input v-model="name">
-        <h1>{{name}}</h1>
-        <button v-on:click="clickMe">click me!</button>
+            <input v-model="name">
+            <h1>{{name}}</h1>
+            <button v-on:click="clickMe">click me!</button>
     </div>
 </body>
 <script src="js/observer.js"></script>
@@ -23,7 +33,7 @@
 <script src="js/index.js"></script>
 <script type="text/javascript">
 
-     new SelfVue({
+    new SelfVue({
         el: '#app',
         data: {
             title: 'hello world',
@@ -42,4 +52,5 @@
     });
 
 </script>
+
 </html>
